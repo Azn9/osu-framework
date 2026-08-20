@@ -103,6 +103,9 @@ namespace osu.Framework.SourceGeneration
         public static bool IsLongRunningLoadAttribute(AttributeData? attribute)
             => IsLongRunningLoadAttribute(attribute?.AttributeClass);
 
+        public static bool IsKeybindHandlerAttribute(AttributeData? attribute)
+            => IsKeybindHandlerAttribute(attribute?.AttributeClass);
+
         public static bool IsBackgroundDependencyLoaderAttribute(ITypeSymbol? type)
             => type != null && GetFullyQualifiedTypeName(type) == "osu.Framework.Allocation.BackgroundDependencyLoaderAttribute";
 
@@ -117,6 +120,9 @@ namespace osu.Framework.SourceGeneration
 
         public static bool IsIDependencyInjectionCandidateInterface(ITypeSymbol? type)
             => type != null && GetFullyQualifiedTypeName(type) == "osu.Framework.Allocation.IDependencyInjectionCandidate";
+
+        public static bool IsKeybindHandlerAttribute(ITypeSymbol? type)
+            => type != null && GetFullyQualifiedTypeName(type) == "osu.Framework.Allocation.KeybindHandler";
 
         public static string GetFullyQualifiedTypeName(ITypeSymbol type)
             => type.ToDisplayString(SymbolDisplayFormat.CSharpErrorMessageFormat);
