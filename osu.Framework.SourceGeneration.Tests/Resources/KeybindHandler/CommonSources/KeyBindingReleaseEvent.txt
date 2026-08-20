@@ -1,0 +1,7 @@
+namespace osu.Framework.Input.Events
+{
+    public class KeyBindingReleaseEvent<T> where T : struct
+    {
+        public T Action;
+    }
+}

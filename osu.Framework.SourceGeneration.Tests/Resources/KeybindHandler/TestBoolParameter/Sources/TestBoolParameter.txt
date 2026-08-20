@@ -1,0 +1,7 @@
+public partial class TestBoolParameter : osu.Framework.Graphics.Drawable
+{
+    [global::osu.Framework.Allocation.KeybindHandler(global::osu.Framework.Test.InputAction.Jump)]
+    private bool handleJumpAction(osu.Framework.Input.Events.KeyBindingPressEvent<global::osu.Framework.Test.InputAction> e) {
+        return false;
+    }
+}

@@ -1,0 +1,9 @@
+public partial class TestMultipleMethodsSameEnum : osu.Framework.Graphics.Drawable
+{
+    [global::osu.Framework.Allocation.KeybindHandler(global::osu.Framework.Test.InputAction.Jump)]
+    private void handleJumpAction() {
+    }
+    [global::osu.Framework.Allocation.KeybindHandler(global::osu.Framework.Test.InputAction.Sprint)]
+    private void handleSprintAction() {
+    }
+}

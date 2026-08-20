@@ -1,0 +1,7 @@
+using System;
+
+namespace osu.Framework.Allocation
+{
+    [AttributeUsage(AttributeTargets.Method)]
+    public class KeybindHandler(object keybindAction) : Attribute;
+}

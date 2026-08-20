@@ -1,0 +1,5 @@
+namespace osu.Framework.Test
+{
+    public enum InputAction { Jump, Sprint }
+    public enum OtherInputAction { Think }
+}

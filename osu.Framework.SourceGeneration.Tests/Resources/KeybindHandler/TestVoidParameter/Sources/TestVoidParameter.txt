@@ -1,0 +1,6 @@
+public partial class TestVoidParameter : osu.Framework.Graphics.Drawable
+{
+    [global::osu.Framework.Allocation.KeybindHandler(global::osu.Framework.Test.InputAction.Jump)]
+    private void handleJumpAction(osu.Framework.Input.Events.KeyBindingPressEvent<global::osu.Framework.Test.InputAction> e) {
+    }
+}
